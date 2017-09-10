@@ -1,34 +1,35 @@
 {
-    "name": "react-tweets",
-    "version": "1.0.0",
-    "description": "Realtime Twitter stream with React and Node.js",
-    "main": "app.js",
-    "scripts": {
-      "watch": "watchify app.js -o public/js/bundle.js -v",
-      "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
-      "build": "npm run browserify ",
-      "start": "npm run watch & nodemon server.js"
-    },
-    "author": "Abhinav Swami <abhinav.swami21@gmail.com>",
-    "dependencies": {
-      "express": "~4.15.4",
-      "express-handlebars": "~3.0.0",
-      "mongoose": "^4.11.10",
-      "node-jsx": "~0.13.3",
-      "ntwitter": "^0.5.0",
-      "react": "~15.6.1",
-      "socket.io": "^2.0.3"
-    },
-    "devDependencies": {
-      "browserify": "~14.4.0",
-      "nodemon": "^1.2.1",
-      "reactify": "~1.1.1",
-      "uglify-js": "~3.0.28",
-      "watchify": "~3.9.0"
-    },
-    "browserify": {
-      "transform": [
-        "reactify"
-      ]
-    }
+  "name": "react-tweets",
+  "version": "1.0.0",
+  "description": "Realtime Twitter stream with React and Node.js",
+  "main": "app.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "author": "Abhinav Swami <abhinav.swami21@gmail.com>",
+  "dependencies": {
+    "express": "~4.15.4",
+    "express-handlebars": "~3.0.0",
+    "mongoose": "^4.11.10",
+    "node-jsx": "~0.13.3",
+    "nodemon": "^1.12.0",
+    "ntwitter": "^0.5.0",
+    "react": "~15.6.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "browserify": "~14.4.0",
+    "nodemon": "^1.2.1",
+    "reactify": "~1.1.1",
+    "uglify-js": "~3.0.28",
+    "watchify": "~3.9.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
+}
