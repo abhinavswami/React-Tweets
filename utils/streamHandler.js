@@ -4,7 +4,6 @@ module.exports = function (stream, io) {
     // When tweets get sent our way ...
     stream.on('data', function (data) {
         // Construct a new tweet object
-        console.log(data);
         var tweet = {
             twid: data['id'],
             active: false,
