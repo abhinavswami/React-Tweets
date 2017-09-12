@@ -39,7 +39,6 @@ var twit = new twitter(config.twitter);
 twit.verifyCredentials(function (err, data) {
     if (err)
         console.log("Unable to verify credentials: " + err);
-    console.log(data);
 });
 
 // Index route  
@@ -60,7 +59,7 @@ var server = http.createServer(app).listen(port, function () {
 var io = require('socket.io').listen(server);
 
 // Set a stream listener for tweets matching tracking keywords
-twit.stream('statuses/filter', { track: '#harvey'}, function (stream) {
+twit.stream('statuses/filter', { track: '#harvey, #orlando'}, function (stream) {
     streamHandler(stream, io);
 });
 
