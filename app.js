@@ -1,10 +1,10 @@
 var React = require('react'),
-TweetApp = require('./components/TweetsApp.react');
+ReactDOM = require('react-dom'),
+TweetsApp = require('./components/TweetsApp.react.js');
 
 // Snag the initial state that we passed on from the server side
 var initialState = JSON.parse(document.getElementById('initial-state').innerHTML)
-
-React.renderComponent(
+ReactDOM.render(
     <TweetsApp tweets= {initialState}/>,
     document.getElementById('react-app')
 );
