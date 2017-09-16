@@ -1,5 +1,5 @@
 # Realtime Twitter stream with React and Node.js
-
+![Alt Text](https://github.com/abhinavswami/React-Tweets/public/screenshots/demo.png)
 ## To Use
 
 ```bash
