@@ -47,7 +47,7 @@ body {
 
 .notification-baractive {
     top: 0;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     width: 100%;
     -webkit-transition: 300ms top ease;
@@ -58,6 +58,7 @@ body {
     text-align: center;
     color: white;
     background: rgba(241, 196, 15, .9);
+    padding: 10px;
 }
 
 .notification-bar a {
